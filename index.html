@@ -1,13 +1,88 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="index.css">
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="index.js"></script>
-  <title></title>
-</head>
-<body>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="animate.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <script src="index.js"></script>
+    <title>Scrum</title>
+  </head>
+  <body>
+    <header id="header_scrum">
+      <h2 id="h2">Scrum Overview</h2>
+      <div class="fill"></div>
+      <button class="icon_addsec"><i class="material-icons addsec">add_box</i></button>
+      <button class='icon_addsec'><i class="material-icons addsec">clear</i></button>
+    </header>
+    <div class="scrum-table">
+      <div id="confirm" class="modal">
+        <span id="confirm-message"></span>
+        <div id="confirm-buttons">
+          <button class="btnStyle" id="confirmBtn">Yes</button>
+          <button class="btnStyle" id="cancelBtn">No</button>
+        </div>
+      </div>
+      <div class="scrum-grid" id="defualt1">
+        <div class="column">
+          <header class="header-table">
+            <h2 class="topic-h1">Epics</h2>
+            <div class="fill"></div>
+            <button class="icon_add"><i class="material-icons add-color">add_box</i></button>
+          </header>
+          <div class="container" id="epics">
+            <div class="item">
+              <div class="item-head">
+                <div class="title-itemHead">
+                  <button id="checkbox"></button>
+                  <div class="list-title" contenteditable="true">New Item</div>
+                  <button class="toggle button-style"><i class="material-icons color" id="expand">expand_more</i></button>
+                  <button class="delete button-style"><i class="material-icons color">clear</i></button>
+                </div>
+                <div class="item-content">
+                  <div class="list-content" contenteditable="true">New Item</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <header class="header-table">
+            <h2 class="topic-h1">To-Do</h2>
+            <div class="fill"></div>
+            <button class="icon_add"><i class="material-icons add-color">add_box</i></button>
+          </header>
+          <div class="container">
+          </div>
+        </div>
+        <div class="column">
+          <header class="header-table">
+            <h2 class="topic-h1">WIP</h2>
+            <div class="fill"></div>
+            <button class="icon_add"><i class="material-icons add-color">add_box</i></button>
+          </header>
+          <div class="container">
+          </div>
+        </div>
+        <div class="column">
+          <header class="header-table">
+            <h2 class="topic-h1">Completed</h2>
+            <div class="fill"></div>
+            <button class="icon_add"><i class="material-icons add-color">add_box</i></button>
+          </header>
+          <div class="container">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="base_nav">
+      <nav>
+        <a href="#defualt1">defualt</a>
+        <a href="#defualt2">defualt</a>
+      </nav>
+    </div>
+    </div>
+  </body>
 </html>
